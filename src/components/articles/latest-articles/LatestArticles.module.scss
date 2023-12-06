@@ -1,0 +1,32 @@
+.latestArticles {
+    width: 60%;
+    aspect-ratio: 64 / 13;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 25%) scale(0.5);
+    padding: 10px;
+    border-radius: 6px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto;
+    transition: .3s ease-in-out;
+    opacity: 0.5;
+    &:hover {
+        transform: translate(-50%, 0%) scale(1);
+        opacity: 1;
+    }
+    @media screen and (max-width: 700px) {
+        display: none;
+    }
+}
+
+.latestArticlesSm {
+    display: none;
+    position: relative;
+    margin-top: 30px;
+    @media screen and (max-width: 700px) {
+        display: block;
+    }
+}
